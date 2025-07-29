@@ -1,0 +1,43 @@
+@if(!errorLoading){
+  <section class="product-details-section">
+      <div class="py-2 text-end me-3">
+        <button class="btn btn-icon btn-dark " (click)="toggleDarkMode()" aria-label="Toggle Dark Mode">
+        <i class="fas fa-moon"></i>
+        </button>
+    </div>
+    <div class="container mt-5">
+      <div class="row shadow p-3 rounded rounded-2 mb-5 border border-white">
+      <div class="col-md-5 ">
+        <img [src]="productDetails.image" [alt]="productDetails.title" class="w-100 shadow shadow-lg rounded rounded-2" height="500">
+      </div>
+      <div class="col-md-7 product-info mt-5">
+        <span class="category-badge">{{productDetails.category}}</span>
+        <h1>{{productDetails.title}}</h1>
+        <div class="rating">
+          <div class="stars">
+            <i class="fas fa-star text-warning"></i>
+            <span>{{productDetails.rating?.rate}}</span>
+          </div>
+        </div>
+        
+        <div class="text-primary fw-bold fs-4">
+          {{productDetails.price | currency:'EGP'}}
+        </div>
+        
+        <div class="description">
+          <h3>Description</h3>
+          <p>{{productDetails.description}}</p>
+        </div>
+        
+       
+      </div>
+      </div>
+
+    </div>
+</section>
+}@else {
+ <div class="text-center mt-5  text-danger">
+  <i class="fas fa-exclamation-triangle fs-2 mt-5 mb-2"></i>
+  <h4>Failed to load products. Please try again later.</h4>
+  </div>
+}

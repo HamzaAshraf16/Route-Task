@@ -1,0 +1,25 @@
+/* Product Details Page Styles */
+.product-details {
+    max-width: 600px;
+}
+
+.rating-badge {
+    background-color: #28a745;
+    font-size: 0.9rem;
+}
+
+.object-fit-contain {
+    object-fit: contain;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+    .product-details {
+        padding-left: 0 !important;
+        margin-top: 1.5rem;
+    }
+    
+    .product-details h2 {
+        font-size: 1.5rem;
+    }
+}
