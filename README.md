@@ -1,27 +1,49 @@
-# Routetask
+# 📘 Route Task
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.7.
+ِA product listing application built with Angular 18 . It fetches products from an API and allows users to search, sort, and paginate through them. The app also supports light and dark mode.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 🧱 Tech Stack used
 
-## Code scaffolding
+- **Angular 18**
+- **Bootstrap 5**
+- **Font Awesome**
+- **ngx-pagination**
+- **ngx-spinner**
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## 🚀 Features
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- 🌐 Client-side Routing
+- 🌙 Dark Mode Toggle
+- 🔄 Loading Spinner with Delay
+- 🔍 Search & Sort Functionality
+- 📃 Pagination
+- 📱 Fully Responsive UI
 
-## Running unit tests
+---
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## 📸 Screenshots
 
-## Running end-to-end tests
+### 🌞 Light Mode
+![Light Mode](./Screenshots/lightmode1.png)
+![Light Mode](./Screenshots/lightmode2.png)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### 🌙 Dark Mode
+![Dark Mode](./Screenshots/Dark1.png)
+![Dark Mode](./Screenshots/dark2.png)
 
-## Further help
+### Error Handling
+![API Erroe](./Screenshots/Error.png)
+![Empty Erroe](./Screenshots/Empty.png)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+---
+
+## 🔧 How to Run Locally
+
+```bash
+git clone https://github.com/HamzaAshraf16/Route-Task.git
+cd Route-Task
+npm install
+ng serve
